@@ -21,3 +21,4 @@ h5py
 accelerate
 transformers
 scikit-learn
+gdown
