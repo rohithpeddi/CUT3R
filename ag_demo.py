@@ -358,9 +358,7 @@ def run_inference(args, model, img_paths, output_video_pkl):
     outputs, state_args = inference(views, model, device)
     total_time = time.time() - start_time
     per_frame_time = total_time / len(views)
-    print(
-        f"Inference completed in {total_time:.2f} seconds (average {per_frame_time:.2f} s per frame)."
-    )
+    print(f"Inference completed in {total_time:.2f} seconds (average {per_frame_time:.2f} s per frame).")
 
     # Process outputs for visualization.
     print("Preparing output for visualization...")
